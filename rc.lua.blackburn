@@ -371,6 +371,15 @@ globalkeys = awful.util.table.join(
             awful.client.focus.bydirection("right")
             if client.focus then client.focus:raise() end
         end),
+    -- Cycle through clients
+    -- http://stackoverflow.com/a/11708588 
+    awful.key({ altkey }, "Tab",
+        function ()
+            for c in awful.client.iterate(function (x) return true end) do
+                client.focus = c
+                client.focus:raise()
+            end
+        end),
 
     -- Show Menu
     awful.key({ modkey }, "w",
