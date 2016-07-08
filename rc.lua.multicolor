@@ -85,7 +85,7 @@ local layouts = {
 -- quake terminal
 local quakeconsole = {}
 for s = 1, screen.count() do
-   quakeconsole[s] = lain.util.quake({ app = terminal })
+   quakeconsole[s] = lain.util.quake({ app = "termite", argname = "--name %s" })
 end
 -- }}}
 
