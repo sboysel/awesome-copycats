@@ -139,10 +139,11 @@ lain.widgets.calendar:attach(mytextclock, { font_size = 10 })
 weathericon = wibox.widget.imagebox(beautiful.widget_weather)
 myweather = lain.widgets.weather({
     city_id = 123456, -- placeholder
+    units = "imperial",
     settings = function()
         descr = weather_now["weather"][1]["description"]:lower()
         units = math.floor(weather_now["main"]["temp"])
-        widget:set_markup(markup("#eca4c4", descr .. " @ " .. units .. "°C "))
+        widget:set_markup(markup("#eca4c4", descr .. " @ " .. units .. "°F "))
     end
 })
 

@@ -214,6 +214,7 @@ volumewidget = lain.widgets.alsa({
 -- Weather
 myweather = lain.widgets.weather({
     city_id = 123456 -- placeholder
+    units = "imperial"
 })
 
 -- Separators

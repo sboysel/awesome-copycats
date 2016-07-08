@@ -198,6 +198,7 @@ volumewidget = lain.widgets.alsa({
 
 myweather = lain.widgets.weather({
     city_id = 123456, -- placeholder
+    units = "imperial",
     settings = function()
         units = math.floor(weather_now["main"]["temp"])
         widget:set_text(" " .. units .. " ")
