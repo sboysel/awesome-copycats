@@ -14,8 +14,8 @@ theme.wallpaper                     = os.getenv("HOME") .. "/.config/awesome/the
 
 theme.topbar_path                   = "png:" .. theme.icon_dir .. "/topbar/"
 
-theme.font                          = "Tamsyn 10.5"
-theme.taglist_font                  = "Tamsyn 8"
+theme.font                          = "Source Code Pro 10"
+theme.taglist_font                  = "Source Code Pro 10"
 theme.fg_normal                     = "#FFFFFF"
 theme.fg_focus                      = "#0099CC"
 theme.bg_normal                     = "#242424"
