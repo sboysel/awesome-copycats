@@ -120,7 +120,7 @@ clockicon = wibox.widget.imagebox(beautiful.widget_clock)
 
 mytextclock = lain.widgets.abase({
     timeout  = 60,
-    cmd      = "date +'%a %d %b %R'",
+    cmd      = "date +'%a %d %b %I:%M %p'",
     settings = function()
         widget:set_text(" " .. output)
     end
